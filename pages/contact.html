@@ -7,22 +7,39 @@
     <title>Contact</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
   <div class="contact_section">
-    <form>
-      <div class="contact_name">
-        <input class="input_text" type="text" id="fname" name="fname" placeholder="FirstName">
-        <input class="input_text" type="text" id="lname" name="lname" placeholder="LastName">
+    <form action="#" method="post" id="contact_form">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="My name is" name="name" id="name_input" required>
       </div>
-      <input class="input_text" type="text" id="email" name="email" placeholder="name@nutter.com">
-      <div class="contact_type">
-        <input type="radio" id="promo" name="promo"><label for="promo">Promo</label>
-        <input type="radio" id="catering" name="catering"><label for="catering">Catering</label>
-        <input type="radio" id="collab" name="collab"><label for="collab">Collab</label>
+      <div class="email">
+        <label for="email"></label>
+        <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
       </div>
-      <input class="input_text" type="text" id="message" name="message" placeholder="Message...">
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Subject line" name="subject" id="subject_input" required>
+          <option disabled hidden selected>Subject line</option>
+          <option>I'd like to start a project</option>
+          <option>I'd like to ask a question</option>
+          <option>I'd like to make a proposal</option>
+        </select>
+      </div>
+      <div class="message">
+        <label for="message"></label>
+        <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Send Message" id="form_button" />
+      </div>
     </form>
   </div>
   </body>

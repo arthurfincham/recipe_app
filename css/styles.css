@@ -160,13 +160,28 @@ a {
 
 .input_text {
   width: 100%;
+  margin: 1vh;
+}
+
+#email {
+  width: 25vw;
+}
+
+#message {
+  height: 30vh;
 }
 
 .contact_name {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
 }
+
+.contact_name > * {
+  width: 10vw;
+}
+
+
 
 /* #region  Contact Buttons */
 .contact_type {
@@ -174,6 +189,7 @@ a {
   flex-direction: row;
   width: 40vw;
   justify-content: space-around;
+  margin: 2vh;
 }
 
 .contact_type label {
