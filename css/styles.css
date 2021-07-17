@@ -9,6 +9,8 @@ body {
   background-color: #e2e7cb;
   overflow: hidden;
   font-family: "CherryBlue";
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 /* #region  Typing */
@@ -46,20 +48,20 @@ body {
 /* #endregion */
 
 /* #region  Nav Buttons */
-a {
+a, span {
   text-decoration: none;
   position: absolute;
   color: #1b3d32;
   font-size: 3em;
-  -webkit-animation: fadein 7s;
+  -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 7s;
+  -moz-animation: fadein 2s;
   /* Firefox < 16 */
-  -ms-animation: fadein 7s;
+  -ms-animation: fadein 2s;
   /* Internet Explorer */
-  -o-animation: fadein 7s;
+  -o-animation: fadein 2s;
   /* Opera < 12.1 */
-  animation: fadein 7s;
+  animation: fadein 2s;
 }
 
 a:hover {
