@@ -17,10 +17,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-    animation: fadeInAnimation ease .5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
+
+
   
 @keyframes fadeInAnimation {
     0% {

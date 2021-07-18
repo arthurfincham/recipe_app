@@ -9,9 +9,8 @@ body {
   background-color: #e2e7cb;
   overflow: hidden;
   font-family: "CherryBlue";
-  opacity: 0;
-  transition: opacity .5s;
 }
+
 
 /* #region  Typing */
 .wrapper {
